@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form action="">
+        <h1><center>TOUR RESERVING FORM:</center></h1>
+        <p><center>let's known what you are interested to see!</center></p>
+        <fieldset>
+            <p> 
+               First Name : <input type="text" name="text" id="name" placeholder="First Name" >
+               Last Name :  <input type="text" name="text" id="name" placeholder="last Name" >
+            </p>
+            <br>
+            <p>
+                Please select your gender* :  <br><br>
+               Male <input type="radio" name="gender" id="male" required>
+               Female <input type="radio" name="gender" id="female" required>
+               Other <input type="radio" name="gender" id="other" required>
+            </p>
+            <br>
+            <p> 
+                Email *: <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            </p> <br>
+            <p> 
+                Cnic No * : <input type="number" name="number" id="number" maxlength="14" placeholder="Cnic No." required>
+            </p> 
+            <p>
+                Please select the facilities you needed in the tour :
+                <br>
+                <input type="checkbox" name="facilities" id="breakfast"> Only Breakfast
+                <br>
+                <input type="checkbox" name="facilities" id="breakfast + refreshment">Breakfast + Refreshment 
+                <br>
+                <input type="checkbox" name="facilities" id="breakfast + dinner">Breakfast + Dinner
+            </p>
+            <p>
+                Categories *:
+                <select name="tourtype" id="tourtype" required>
+                    <option value="">Select The Option</option>
+                    <option value="economy">Economy</option>
+                    <option value="3 star">3 Star </option>
+                    <option value="5 star">5 Star</option>
+                </select>
+            </p>
+            <br>
+            <p>
+                How many people are in the group : 
+                <input type="number" name="group" id="group">
+            </p>
+            <br>
+            <p>What is the best way to Contact you  <br>
+                <input type="checkbox" name="select" id="Phone">Phone<br>
+                <input type="checkbox" name="select" id="Email">Email<br>
+                <input type="checkbox" name="select" id="Either">Either
+
+            </p>
+            <br>
+            Message :
+            <p>
+                <textarea name="message" id="message" cols="60" rows="10" placeholder="Enter the message.."></textarea>
+            </p>
+            
+            <p>
+                <input type="file" name="file" id="file">
+            </p>
+            <br>
+            <p>
+                <input type="submit" value="Submit"> 
+            </p>
+            <h3><center><a href="../home.html" >GO TO HOME</a></center></h3>
+
+        </fieldset>
+    </form>
+</body>
+</html>
